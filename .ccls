@@ -1,0 +1,10 @@
+{
+  "clang": {
+    "extraArgs": [
+      "-I",
+      "/usr/lib/arduino/hardware/tools/avr/avr/include/",
+      "-I",
+      "/usr/avr/include"
+    ]
+  }
+}
