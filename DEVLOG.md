@@ -75,7 +75,7 @@ int main(void){
     console_init(9600); // console initialisation
     console_write('H');
     console_write('i'); // greeting
-    DDRB |= (1<<input); // set pin LED_BUILTIN as output
+    DDRB = 0xff; // set PORTB as output
 	while(1){
         if(console_ready()){ // check if anything in buffer
             pin_id = console_read()-'0'; // get pin id
